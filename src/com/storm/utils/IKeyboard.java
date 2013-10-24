@@ -10,7 +10,7 @@ import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-public class Keyboard {
+public class IKeyboard {
 	// 关闭键盘
 	public static void close(Context context, EditText editText) {
 		InputMethodManager imm = (InputMethodManager) context
