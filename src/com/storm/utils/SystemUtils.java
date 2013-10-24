@@ -11,7 +11,6 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
 public class SystemUtils {
-
 	// MAC地址(如:1C:B0:94:ED:6C:AC)
 	public static String getMacAddress(Context context) {
 		WifiManager manager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
