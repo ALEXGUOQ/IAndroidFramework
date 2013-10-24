@@ -9,7 +9,7 @@ package com.storm.utils;
 import android.content.Context;
 import android.widget.Toast;
 
-public class ToastUtils {
+public class IToast {
 	public static void showLong(Context ctx, String text) {
 		Toast.makeText(ctx, text, Toast.LENGTH_LONG).show();
 	}
