@@ -6,6 +6,7 @@
 
 package com.storm.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -30,5 +31,13 @@ public class IKeyboard {
 		InputMethodManager imm = (InputMethodManager) context
 				.getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm.toggleSoftInputFromWindow(editText.getWindowToken(), InputMethodManager.SHOW_FORCED, 0);
+	}
+
+	// 整个页面关闭键盘
+	public static void closeAll(Context context) {
+		InputMethodManager imm = (InputMethodManager) context
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		if (context instanceof Activity)
+			imm.hideSoftInputFromWindow(((Activity) context).getCurrentFocus().getWindowToken(), 0);
 	}
 }
