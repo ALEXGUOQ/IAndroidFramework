@@ -10,6 +10,5 @@ import android.content.Context;
 
 public class IDialog {
 	public static void show(Context context) {
-		
 	}
 }
