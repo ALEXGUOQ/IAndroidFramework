@@ -1,8 +1,8 @@
 apply plugin: 'android'
 
 dependencies {
-  //单文件依赖
-  compile files('libs/android-support-v4.jar')
+  // 单文件依赖
+  // compile files('libs/android-support-v4.jar')
   compile project(':library')
 }
 

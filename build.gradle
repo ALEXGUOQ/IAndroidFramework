@@ -9,7 +9,7 @@ buildscript {
 }
 
 allprojects {
-  group = 'com.storm.sample'
+  group = 'com.storm.iandroidframework'
   version = '1.0'
 
   repositories {
