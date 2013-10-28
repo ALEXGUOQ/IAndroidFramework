@@ -1,6 +1,7 @@
 package com.storm.sample;
 
 import com.storm.utils.ILog;
+import com.storm.utils.IToast;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -14,6 +15,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		ILog.e(TAG, "onCreate");
+		IToast.showShort(this, "你好，安卓");
 	}
 
 	@Override
