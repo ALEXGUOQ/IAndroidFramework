@@ -6,23 +6,79 @@
 
 package com.storm.utils;
 
+import android.app.Activity;
 import android.content.Context;
+import android.text.TextUtils;
 import android.widget.Toast;
 
+/**
+ * Helper to show {@link Toast} notifications
+ */
 public class IToast {
-	public static void showLong(Context context, String text) {
-		Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+
+	private static void show(final Activity activity, final int resId, final int duration) {
+		if (activity == null)
+			return;
+
+		final Context context = activity.getApplication();
+		activity.runOnUiThread(new Runnable() {
+			public void run() {
+				Toast.makeText(context, resId, duration).show();
+			}
+		});
 	}
 
-	public static void showShort(Context context, String text) {
-		Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+	private static void show(final Activity activity, final String message, final int duration) {
+		if (activity == null)
+			return;
+		if (TextUtils.isEmpty(message))
+			return;
+
+		final Context context = activity.getApplication();
+		activity.runOnUiThread(new Runnable() {
+			public void run() {
+				Toast.makeText(context, message, duration).show();
+			}
+		});
 	}
 
-	public static void showLong(Context context, int resId) {
-		Toast.makeText(context, resId, Toast.LENGTH_LONG).show();
+	/**
+	 * Show message in {@link Toast} with {@link Toast#LENGTH_LONG} duration
+	 * 
+	 * @param activity
+	 * @param resId
+	 */
+	public static void showLong(final Activity activity, final int resId) {
+		show(activity, resId, Toast.LENGTH_LONG);
 	}
 
-	public static void showShort(Context context, int resId) {
-		Toast.makeText(context, resId, Toast.LENGTH_SHORT).show();
+	/**
+	 * Show message in {@link Toast} with {@link Toast#LENGTH_SHORT} duration
+	 * 
+	 * @param activity
+	 * @param resId
+	 */
+	public static void showShort(final Activity activity, final int resId) {
+		show(activity, resId, Toast.LENGTH_SHORT);
+	}
+
+	/**
+	 * Show message in {@link Toast} with {@link Toast#LENGTH_LONG} duration
+	 * 
+	 * @param activity
+	 * @param message
+	 */
+	public static void showLong(final Activity activity, final String message) {
+		show(activity, message, Toast.LENGTH_LONG);
+	}
+
+	/**
+	 * Show message in {@link Toast} with {@link Toast#LENGTH_SHORT} duration
+	 * 
+	 * @param activity
+	 * @param message
+	 */
+	public static void showShort(final Activity activity, final String message) {
+		show(activity, message, Toast.LENGTH_SHORT);
 	}
 }
