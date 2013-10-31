@@ -2,6 +2,7 @@ package com.storm.sample;
 
 import com.storm.utils.ILog;
 import com.storm.utils.IToast;
+import com.storm.widgets.IDialog;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -16,6 +17,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main);
 		ILog.e(TAG, "onCreate");
 		IToast.showShort(this, "你好，安卓");
+		IDialog.create(this, "删除", "确定删除么？").show();
 	}
 
 	@Override
