@@ -1,12 +1,12 @@
 package com.storm.sample;
 
-import com.storm.utils.ILog;
-import com.storm.utils.IToast;
-import com.storm.widgets.IDialog;
-
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+
+import com.storm.util.ILog;
+import com.storm.util.IToast;
+import com.storm.widgets.IDialog;
 
 public class MainActivity extends Activity {
 	static final String TAG = MainActivity.class.getSimpleName();

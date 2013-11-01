@@ -1,4 +1,4 @@
-package com.storm.utils;
+package com.storm.util;
 
 import android.content.Context;
 

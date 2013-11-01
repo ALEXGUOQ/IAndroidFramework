@@ -1,4 +1,4 @@
-package com.storm.utils;
+package com.storm.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

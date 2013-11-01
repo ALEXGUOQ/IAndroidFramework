@@ -4,7 +4,7 @@
  * Copyright (C) 2013 BOOHEE. All rights reserved.
  */
 
-package com.storm.utils;
+package com.storm.util;
 
 import android.database.sqlite.SQLiteException;
 
