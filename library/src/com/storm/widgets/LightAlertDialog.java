@@ -12,11 +12,11 @@ import android.content.Context;
 /**
  * Alert dialog in Holo Light theme
  */
-public class IDialog extends AlertDialog {
+public class LightAlertDialog extends AlertDialog {
 	/**
 	 * @param context
 	 */
-	protected IDialog(Context context) {
+	protected LightAlertDialog(Context context) {
 		super(context);
 	}
 
@@ -24,7 +24,7 @@ public class IDialog extends AlertDialog {
 	 * @param context
 	 * @param theme
 	 */
-	protected IDialog(Context context, int theme) {
+	protected LightAlertDialog(Context context, int theme) {
 		super(context, theme);
 	}
 
@@ -34,12 +34,12 @@ public class IDialog extends AlertDialog {
 	 * @param context
 	 * @return light alert dialog
 	 */
-	public static IDialog create(Context context) {
-		IDialog dialog;
+	public static LightAlertDialog create(Context context) {
+		LightAlertDialog dialog;
 		if (android.os.Build.VERSION.SDK_INT >= 14)
-			dialog = new IDialog(context, THEME_HOLO_LIGHT);
+			dialog = new LightAlertDialog(context, THEME_HOLO_LIGHT);
 		else {
-			dialog = new IDialog(context);
+			dialog = new LightAlertDialog(context);
 			dialog.setInverseBackgroundForced(true);
 		}
 		return dialog;
@@ -53,8 +53,8 @@ public class IDialog extends AlertDialog {
 	 * @param message
 	 * @return alert dialog
 	 */
-	public static IDialog create(Context context, String title, String message) {
-		IDialog dialog = create(context);
+	public static LightAlertDialog create(Context context, String title, String message) {
+		LightAlertDialog dialog = create(context);
 		dialog.setTitle(title);
 		dialog.setMessage(message);
 		return dialog;
@@ -68,8 +68,8 @@ public class IDialog extends AlertDialog {
 	 * @param resId
 	 * @return alert dialog
 	 */
-	public static IDialog create(Context context, int title, int resId) {
-		IDialog dialog = create(context);
+	public static LightAlertDialog create(Context context, int title, int resId) {
+		LightAlertDialog dialog = create(context);
 		dialog.setTitle(title);
 		dialog.setMessage(context.getString(resId));
 		return dialog;
@@ -82,7 +82,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setPositiveButton(int redId, OnClickListener listener) {
+	public LightAlertDialog setPositiveButton(int redId, OnClickListener listener) {
 		return setPositiveButton(getContext().getString(redId), listener);
 	}
 
@@ -92,7 +92,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setPositiveButton(OnClickListener listener) {
+	public LightAlertDialog setPositiveButton(OnClickListener listener) {
 		return setPositiveButton(android.R.string.ok, listener);
 	}
 
@@ -103,7 +103,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setPositiveButton(CharSequence text, OnClickListener listener) {
+	public LightAlertDialog setPositiveButton(CharSequence text, OnClickListener listener) {
 		setButton(BUTTON_POSITIVE, text, listener);
 		return this;
 	}
@@ -115,7 +115,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setNegativeButton(int resId, OnClickListener listener) {
+	public LightAlertDialog setNegativeButton(int resId, OnClickListener listener) {
 		return setNegativeButton(getContext().getString(resId), listener);
 	}
 
@@ -125,7 +125,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setNegativeButton(OnClickListener listener) {
+	public LightAlertDialog setNegativeButton(OnClickListener listener) {
 		return setNegativeButton(android.R.string.cancel, listener);
 	}
 
@@ -136,7 +136,7 @@ public class IDialog extends AlertDialog {
 	 * @param listener
 	 * @return this dialog
 	 */
-	public IDialog setNegativeButton(CharSequence text, OnClickListener listener) {
+	public LightAlertDialog setNegativeButton(CharSequence text, OnClickListener listener) {
 		setButton(BUTTON_NEGATIVE, text, listener);
 		return this;
 	}
