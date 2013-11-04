@@ -22,7 +22,6 @@ public class AutoBgButton extends Button {
 		super(context, attrs, defStyle);
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public void setBackgroundDrawable(Drawable d) {
 		// Replace the original background drawable (e.g. image) with a
