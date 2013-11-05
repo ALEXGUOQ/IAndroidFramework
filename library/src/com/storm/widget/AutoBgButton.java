@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.widget.Button;
 
 public class AutoBgButton extends Button {
+	
 	public AutoBgButton(Context context) {
 		super(context);
 	}

@@ -1,4 +1,4 @@
-package com.storm.ui;
+package com.storm.sample;
 
 import com.storm.sample.R;
 

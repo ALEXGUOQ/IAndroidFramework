@@ -14,10 +14,28 @@
  * limitations under the License.
  */
 
-package com.storm.ui;
+package com.storm.sample;
 
 import android.app.Activity;
+import android.os.Bundle;
+
+import com.storm.ViewFinder;
 
 public class BaseActivity extends Activity {
 
+	protected ViewFinder finder;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		finder = new ViewFinder(this);
+	}
+
+	protected void onPause() {
+		super.onPause();
+	}
+
+	protected void onDestroy() {
+		super.onDestroy();
+	}
 }

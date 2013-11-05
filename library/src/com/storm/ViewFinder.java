@@ -4,7 +4,7 @@
  * Copyright (C) 2013 BOOHEE. All rights reserved.
  */
 
-package com.storm.util;
+package com.storm;
 
 import android.app.Activity;
 import android.content.res.Resources;
