@@ -1,7 +1,6 @@
 /*
  * @creator Storm
- * @created_at Oct 21, 2013 10:46:35 AM
- * Copyright (C) 2013 BOOHEE. All rights reserved.
+ * @created_at 2013-10-21
  */
 
 package com.storm.util;
@@ -11,7 +10,7 @@ import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-public class IKeyboard {
+public class KeyboardUtils {
 	// 关闭键盘
 	public static void close(Context context, EditText editText) {
 		InputMethodManager imm = (InputMethodManager) context

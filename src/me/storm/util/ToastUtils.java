@@ -1,6 +1,6 @@
 /*
  * @creator Storm
- * @created_at 2013-7-1 下午5:36:23
+ * @created_at 2013-7-1
  */
 
 package com.storm.util;
@@ -10,10 +10,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-/**
- * Helper to show {@link Toast} notifications
- */
-public class IToast {
+public class ToastUtils {
 
 	private static void show(final Activity activity, final int resId, final int duration) {
 		if (activity == null)
@@ -41,42 +38,18 @@ public class IToast {
 		});
 	}
 
-	/**
-	 * Show message in {@link Toast} with {@link Toast#LENGTH_LONG} duration
-	 * 
-	 * @param activity
-	 * @param resId
-	 */
 	public static void showLong(final Activity activity, final int resId) {
 		show(activity, resId, Toast.LENGTH_LONG);
 	}
 
-	/**
-	 * Show message in {@link Toast} with {@link Toast#LENGTH_SHORT} duration
-	 * 
-	 * @param activity
-	 * @param resId
-	 */
 	public static void showShort(final Activity activity, final int resId) {
 		show(activity, resId, Toast.LENGTH_SHORT);
 	}
 
-	/**
-	 * Show message in {@link Toast} with {@link Toast#LENGTH_LONG} duration
-	 * 
-	 * @param activity
-	 * @param message
-	 */
 	public static void showLong(final Activity activity, final String message) {
 		show(activity, message, Toast.LENGTH_LONG);
 	}
 
-	/**
-	 * Show message in {@link Toast} with {@link Toast#LENGTH_SHORT} duration
-	 * 
-	 * @param activity
-	 * @param message
-	 */
 	public static void showShort(final Activity activity, final String message) {
 		show(activity, message, Toast.LENGTH_SHORT);
 	}

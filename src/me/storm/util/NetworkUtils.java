@@ -1,7 +1,6 @@
 /*
  * @creator Storm
- * @created_at 2013-7-1 下午5:41:54
- * Copyright (C) 2013 BOOHEE. All rights reserved.
+ * @created_at 2013-7-1
  */
 
 package com.storm.util;
