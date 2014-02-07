@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <color name="global_navbar_bg">#ff4c4b</color>
-    <color name="global_main_bg">#f2f0eb</color>
-    <color name="light_gray">#999</color>
-
-</resources>

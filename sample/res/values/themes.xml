@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="Theme.ST" parent="android:Theme.Light">
-        <item name="android:windowBackground">@color/global_main_bg</item>
-    </style>
-
-</resources>
