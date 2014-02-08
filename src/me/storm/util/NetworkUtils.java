@@ -3,7 +3,7 @@
  * @created_at 2013-7-1
  */
 
-package com.storm.util;
+package me.storm.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

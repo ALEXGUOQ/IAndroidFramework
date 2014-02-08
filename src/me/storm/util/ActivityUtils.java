@@ -3,7 +3,7 @@
  * @created_at 2013-7-1
  */
 
-package com.storm.util;
+package me.storm.util;
 
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static android.content.Intent.FLAG_ACTIVITY_SINGLE_TOP;

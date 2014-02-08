@@ -3,7 +3,7 @@
  * @created_at 2013-10-21
  */
 
-package com.storm.util;
+package me.storm.util;
 
 import android.app.Activity;
 import android.content.Context;
