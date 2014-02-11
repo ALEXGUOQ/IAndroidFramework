@@ -1,6 +1,5 @@
 /*
- * @creator Storm
- * @created_at 2013-7-1
+ * Created by Storm Zhang, 2014.
  */
 
 package me.storm.util;

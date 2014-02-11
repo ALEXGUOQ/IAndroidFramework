@@ -1,3 +1,7 @@
+/*
+ * Created by Storm Zhang, 2014.
+ */
+
 package me.storm.util;
 
 import android.content.Context;
